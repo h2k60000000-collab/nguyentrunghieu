@@ -1,0 +1,183 @@
+/* ===== Dọn dẹp chung ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f7fb;
+  color: #222222;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  width: 100%;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #12263f;
+  color: #ffffff;
+  padding: 28px 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+header p {
+  color: #c9d6e6;
+  margin-bottom: 0;
+}
+
+/* ===== Nav ===== */
+nav {
+  background-color: #1a4f8b;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 20px;
+}
+
+nav a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 14px 22px;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #0f3a69;
+}
+
+/* ===== Bố cục hai cột ===== */
+.layout {
+  display: flex;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+/* ===== Main ===== */
+main {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+.layout main {
+  flex: 0 0 70%;
+  max-width: 70%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Aside ===== */
+aside {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #d5dfec;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+aside h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #dfe8f3;
+  color: #333333;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 3px solid #1a4f8b;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #1a4f8b;
+  margin: 0 8px;
+}
+
+/* ===== Tiêu đề ===== */
+h1 {
+  color: #1a4f8b;
+  font-size: 2.5rem;
+  border-bottom: 3px solid #1a4f8b;
+  padding-bottom: 8px;
+}
+
+h2 {
+  color: #c0392b;
+  font-size: 1.8rem;
+  margin-top: 32px;
+}
+
+h3 {
+  color: #27ae60;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+/* ===== Đoạn văn ===== */
+p {
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* ===== Hình ảnh ===== */
+img {
+  max-width: 100%;
+  border: 3px solid #1a4f8b;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #ffffff;
+}
+
+/* ===== Danh sách trong nội dung ===== */
+main ul {
+  list-style-type: square;
+  padding-left: 30px;
+}
+
+main ol,
+aside ul {
+  padding-left: 30px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* ===== Màn hình nhỏ: xếp thành một cột ===== */
+@media (max-width: 700px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .layout main {
+    flex: none;
+    max-width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+}
